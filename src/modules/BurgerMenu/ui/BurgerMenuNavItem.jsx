@@ -2,17 +2,18 @@
 
 import clsx from 'clsx'
 import { IoIosArrowDown } from 'react-icons/io'
+import BurgerDropDownMenuList from './BurgerDropDownMenuList'
 
 const BurgerMenuNavItem = ({ item, index, openIndex, setOpenIndex }) => {
 	return (
 		<li
 			className={clsx(
-				'flex flex-col justify-center border-b border-grey last:border-0',
+				'flex flex-col justify-center border-b border-grey-deep last:border-0',
 				openIndex === index && 'shadow-card'
 			)}
 		>
 			<button
-				className='flex items-center justify-between h-[60px] px-lg-strong w-full'
+				className='flex items-center justify-between h-[60px] w-full'
 				type='button'
 				onClick={() => setOpenIndex(prev => (prev === index ? null : index))}
 			>
@@ -25,6 +26,8 @@ const BurgerMenuNavItem = ({ item, index, openIndex, setOpenIndex }) => {
 					size={16}
 				/>
 			</button>
+
+			{openIndex === index && <BurgerDropDownMenuList list={item.list} />}
 		</li>
 	)
 }
