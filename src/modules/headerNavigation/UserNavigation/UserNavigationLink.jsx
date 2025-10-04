@@ -1,4 +1,3 @@
-import NotificationBadge from '@/ui/Badges/NotificationBadge'
 import Link from 'next/link'
 
 const UserNavigationLink = ({ item }) => {
@@ -9,7 +8,6 @@ const UserNavigationLink = ({ item }) => {
 			aria-label={item?.ariaLabel}
 		>
 			<span>{item?.icon}</span>
-			<NotificationBadge />
 		</Link>
 	)
 }
