@@ -15,7 +15,7 @@ const UserNavigationButton = ({
 	return (
 		<div className='relative'>
 			<IconButton
-				className='flex items-center justify-center gap-sm px-md py-md'
+				className='flex items-center justify-center gap-sm p-md'
 				iconClassName='group-hover:fill-white'
 				onClick={() => setOpenIndex(prev => (prev === index ? null : index))}
 				icon={item?.icon}
@@ -24,7 +24,7 @@ const UserNavigationButton = ({
 				{windowWidth > 755 && windowWidth < 1014 && index === 1 && (
 					<IoIosArrowDown
 						className={clsx(
-							'fill-light-grey transition linear duration-300 group-hover:fill-light-white',
+							'fill-grey-light transition linear duration-300 group-hover:fill-white',
 							openIndex === index && 'rotate-180'
 						)}
 						size={16}

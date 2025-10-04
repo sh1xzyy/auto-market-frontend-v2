@@ -13,7 +13,7 @@ const BurgerMenuNavItem = ({ item, index, openIndex, setOpenIndex }) => {
 			)}
 		>
 			<button
-				className='flex items-center justify-between h-[60px] w-full'
+				className='flex items-center justify-between h-[60px] w-full px-lg-plus'
 				type='button'
 				onClick={() => setOpenIndex(prev => (prev === index ? null : index))}
 			>
