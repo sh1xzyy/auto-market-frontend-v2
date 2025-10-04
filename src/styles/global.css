@@ -34,28 +34,28 @@
 	--color-black-deep-bg: rgb(16, 16, 20);
 
 	/* Font sizes */
-	--font-sm: 12px;
-	--font-md: 14px;
-	--font-lg: 20px;
-	--font-xl: 24px;
-	--font-2xl: 32px;
+	--text-sm: 12px;
+	--text-md: 14px;
+	--text-lg: 20px;
+	--text-xl: 24px;
+	--text-2xl: 32px;
 
 	/* Spacing (margin/padding) */
-	--space-xxs: 2px;
-	--space-xs: 4px;
-	--space-sm: 6px;
-	--space-sm-plus: 7px;
-	--space-md: 8px;
-	--space-md-plus: 9px;
-	--space-md-strong: 10px;
-	--space-lg: 12px;
-	--space-lg-plus: 16px;
-	--space-lg-strong: 18px;
-	--space-xl: 24px;
-	--space-xl-plus: 27px;
-	--space-2xl: 32px;
-	--space-3xl: 36px;
-	--space-4xl: 54px;
+	--spacing-xxs: 2px;
+	--spacing-xs: 4px;
+	--spacing-sm: 6px;
+	--spacing-sm-plus: 7px;
+	--spacing-md: 8px;
+	--spacing-md-plus: 9px;
+	--spacing-md-strong: 10px;
+	--spacing-lg: 12px;
+	--spacing-lg-plus: 16px;
+	--spacing-lg-strong: 18px;
+	--spacing-xl: 24px;
+	--spacing-xl-plus: 27px;
+	--spacing-2xl: 32px;
+	--spacing-3xl: 36px;
+	--spacing-4xl: 54px;
 
 	/* Border radius */
 	--radius-xs: 4px;
@@ -72,6 +72,7 @@
 	--breakpoint-lg: 1008px;
 
 	/* Shadows */
+	--shadow-header: 0px 0px 0px 1px var(--color-grey-deep);
 	--shadow-card: inset 1px 0px 5px 5px var(--color-dark-violet);
 }
 
@@ -129,5 +130,18 @@
 		clip-path: inset(100%);
 		clip: rect(0 0 0 0);
 		overflow: hidden;
+	}
+}
+
+.dropDownAnimation {
+	animation: smooth-appearance 300ms;
+}
+
+@keyframes smooth-appearance {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
