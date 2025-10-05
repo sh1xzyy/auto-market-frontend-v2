@@ -1,3 +1,14 @@
+import MainImage from '@/components/MainImage/MainImage'
+
 export default function Home() {
-	return <div className='h-[100vh]'>Home</div>
+	return (
+		<>
+			<h1 className='visually-hidden'>
+				Go mobile. Find what&apos;s best for you - on Germany&apos;s biggest
+				vehicle marketplace
+			</h1>
+
+			<MainImage />
+		</>
+	)
 }

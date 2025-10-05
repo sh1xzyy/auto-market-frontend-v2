@@ -133,6 +133,31 @@
 	}
 }
 
+.custom-scroll::-webkit-scrollbar {
+	width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+	background: var(--color-grey);
+	border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+	background: var(--color-super-grey);
+	border-radius: 10px;
+}
+
+.hidden-scroll {
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
 .dropDownAnimation {
 	animation: smooth-appearance 300ms;
 }
