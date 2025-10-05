@@ -11,7 +11,7 @@ export default function Home() {
 
 			<MainImage />
 
-			<section className='py-sm-plus mt-[405px]'>
+			<section className='pb-sm-plus mt-[405px]'>
 				<MainFilters />
 			</section>
 		</>
