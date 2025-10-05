@@ -4,6 +4,7 @@ import { useState } from 'react'
 import AuthTabs from './ui/AuthTabs'
 import AuthTitle from './ui/AuthTitle'
 import SocialAuthButtons from './ui/SocialAuthButtons'
+import Divider from './ui/Divider'
 
 const AuthCard = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
@@ -32,6 +33,7 @@ const AuthCard = () => {
 								: 'Mit Apple registrieren'
 						}
 					/>
+					<Divider />
 				</div>
 			</div>
 		</div>
