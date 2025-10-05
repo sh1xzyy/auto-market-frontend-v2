@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import AuthTabs from './ui/AuthTabs'
 import AuthTitle from './ui/AuthTitle'
+import SocialAuthButtons from './ui/SocialAuthButtons'
 
 const AuthCard = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
@@ -17,6 +18,18 @@ const AuthCard = () => {
 							activeIndex === 0
 								? 'Hallo! Willkommen zurück!'
 								: 'Erstelle Dein mobile.de Konto!'
+						}
+					/>
+					<SocialAuthButtons
+						googleLabel={
+							activeIndex === 0
+								? 'Mit Google anmelden'
+								: 'Mit Google registrieren'
+						}
+						appleLabel={
+							activeIndex === 0
+								? 'Mit Apple anmelden'
+								: 'Mit Apple registrieren'
 						}
 					/>
 				</div>
