@@ -1,5 +1,7 @@
 import { Form, Formik } from 'formik'
 import PasswordRequirements from './PasswordRequirements'
+import Input from '@/ui/input/Input'
+import PasswordInput from '@/ui/input/PasswordInput'
 
 const RegisterForm = () => {
 	return (
