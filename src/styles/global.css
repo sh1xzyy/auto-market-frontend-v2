@@ -34,6 +34,7 @@
 	--color-black-deep-bg: rgb(16, 16, 20);
 
 	/* Font sizes */
+	--text-xs: 10px;
 	--text-sm: 12px;
 	--text-md: 14px;
 	--text-lg: 20px;
