@@ -3,7 +3,7 @@ import Container from '@/components/Container/Container'
 
 const Page = () => {
 	return (
-		<section className='my-xl-plus md:my-4xl'>
+		<section className='my-xl-plus md:mt-4xl md:mb-0'>
 			<Container className='md:px-lg-strong'>
 				<Auth />
 			</Container>
