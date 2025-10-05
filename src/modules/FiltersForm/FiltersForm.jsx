@@ -7,6 +7,7 @@ import CheckboxContent from './ui/CheckboxContent'
 import Radio from '@/ui/Radio/Radio'
 import SubmitButtonContent from './ui/SubmitButtonContent'
 import SubmitButton from '@/ui/SubmitButton/SubmitButton'
+import FilterButtons from './ui/FilterButtons'
 
 const initialValues = {
 	brand: '',
@@ -52,6 +53,8 @@ const FiltersForm = ({ openIndex, vehiclesFields }) => {
 								<SubmitButtonContent item={item} vehicleQuantity='2932' />
 							</SubmitButton>
 						)}
+
+						{item?.type === 'filterButton' && <FilterButtons item={item} />}
 					</div>
 				))}
 			</Form>
