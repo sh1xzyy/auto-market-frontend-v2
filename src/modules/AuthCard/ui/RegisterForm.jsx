@@ -2,8 +2,9 @@ import { Form, Formik } from 'formik'
 import PasswordRequirements from './PasswordRequirements'
 import Input from '@/ui/input/Input'
 import PasswordInput from '@/ui/input/PasswordInput'
-import RegisterCheckboxContent from './RegisterCheckboxContent'
+import RegisterFormCheckboxContent from './RegisterFormCheckboxContent'
 import Checkbox from '@/ui/Checkbox/Checkbox'
+import RegisterFormLegalText from './RegisterFormLegalText'
 
 const RegisterForm = () => {
 	return (
@@ -32,8 +33,10 @@ const RegisterForm = () => {
 					</div>
 
 					<Checkbox>
-						<RegisterCheckboxContent />
+						<RegisterFormCheckboxContent />
 					</Checkbox>
+
+					<RegisterFormLegalText />
 				</Form>
 			)}
 		</Formik>

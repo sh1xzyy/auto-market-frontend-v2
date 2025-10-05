@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const RegisterCheckboxContent = () => {
+const RegisterFormCheckboxContent = () => {
 	return (
 		<span className='text-md font-bold leading-[20px]'>
 			Ich stimme der Nutzung meiner Daten zum Erhalt personalisierter
@@ -14,4 +14,4 @@ const RegisterCheckboxContent = () => {
 	)
 }
 
-export default RegisterCheckboxContent
+export default RegisterFormCheckboxContent
