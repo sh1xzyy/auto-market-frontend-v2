@@ -5,6 +5,7 @@ import PasswordInput from '@/ui/input/PasswordInput'
 import RegisterFormCheckboxContent from './RegisterFormCheckboxContent'
 import Checkbox from '@/ui/Checkbox/Checkbox'
 import RegisterFormLegalText from './RegisterFormLegalText'
+import AuthSubmitButton from './AuthSubmitButton'
 
 const RegisterForm = () => {
 	return (
@@ -37,6 +38,8 @@ const RegisterForm = () => {
 					</Checkbox>
 
 					<RegisterFormLegalText />
+
+					<AuthSubmitButton label='Registrieren' />
 				</Form>
 			)}
 		</Formik>

@@ -2,6 +2,7 @@ import { Form, Formik } from 'formik'
 import Link from 'next/link'
 import Input from '@/ui/input/Input'
 import PasswordInput from '@/ui/input/PasswordInput'
+import AuthSubmitButton from './AuthSubmitButton'
 
 const LoginForm = () => {
 	return (
@@ -26,9 +27,14 @@ const LoginForm = () => {
 						label='Passwort'
 					/>
 
-					<Link className='block text-md font-bold underline mb-2lg' href='/'>
+					<Link
+						className='block text-md font-bold underline mb-lg-strong'
+						href='/'
+					>
 						Passwort vergessen?
 					</Link>
+
+					<AuthSubmitButton label='Anmelden' />
 				</Form>
 			)}
 		</Formik>
