@@ -33,7 +33,11 @@ const RegisterForm = () => {
 						<PasswordRequirements />
 					</div>
 
-					<Checkbox>
+					<Checkbox
+						wrapperClassName='mb-lg-strong'
+						labelClassName='items-start'
+						isCheckedClassName='bg-violet border-0'
+					>
 						<RegisterFormCheckboxContent />
 					</Checkbox>
 
