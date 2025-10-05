@@ -1,9 +1,9 @@
 import { ErrorMessage, Field } from 'formik'
 import { inputStyles } from './inputStyles'
 
-const Input = ({ name, label, type, placeholder }) => {
+const Input = ({ name, label, type, placeholder, wrapperClassName }) => {
 	return (
-		<div>
+		<div className={wrapperClassName}>
 			{label && (
 				<label className='block mb-sm text-md font-bold' htmlFor={name}>
 					{label}

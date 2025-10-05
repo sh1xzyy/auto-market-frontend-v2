@@ -5,6 +5,7 @@ import AuthTabs from './ui/AuthTabs'
 import AuthTitle from './ui/AuthTitle'
 import SocialAuthButtons from './ui/SocialAuthButtons'
 import Divider from './ui/Divider'
+import LoginForm from './ui/LoginForm'
 
 const AuthCard = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
@@ -34,6 +35,8 @@ const AuthCard = () => {
 						}
 					/>
 					<Divider />
+
+					{activeIndex === 0 ? <LoginForm /> : 'RegisterForm'}
 				</div>
 			</div>
 		</div>

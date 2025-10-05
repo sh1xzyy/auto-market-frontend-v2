@@ -5,11 +5,11 @@ import { inputStyles } from './inputStyles'
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa'
 import { useState } from 'react'
 
-const PasswordInput = ({ name, label, placeholder }) => {
+const PasswordInput = ({ name, label, placeholder, wrapperClassName }) => {
 	const [isPasswordOpen, setIsPasswordOpen] = useState(false)
 
 	return (
-		<div>
+		<div className={wrapperClassName}>
 			{label && (
 				<label className='block mb-sm text-md font-bold' htmlFor={name}>
 					{label}
