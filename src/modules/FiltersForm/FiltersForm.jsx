@@ -1,6 +1,7 @@
 import { Form, Formik } from 'formik'
 import clsx from 'clsx'
 import { classByType } from './data/classByType'
+import Selector from '@/ui/Selector/Selector'
 
 const initialValues = {
 	brand: '',
@@ -24,7 +25,11 @@ const FiltersForm = ({ openIndex, vehiclesFields }) => {
 					<div
 						className={clsx(classByType[item?.type] || classByType[item?.id])}
 						key={item?.id}
-					></div>
+					>
+						{item?.type === 'selector' && (
+							<Selector item={item} placeholder='Beliebig' name={item?.name} />
+						)}
+					</div>
 				))}
 			</Form>
 		</Formik>
