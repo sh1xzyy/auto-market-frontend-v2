@@ -4,6 +4,7 @@ import { classByType } from './data/classByType'
 import Selector from '@/ui/Selector/Selector'
 import Checkbox from '@/ui/Checkbox/Checkbox'
 import CheckboxContent from './ui/CheckboxContent'
+import Radio from '@/ui/Radio/Radio'
 
 const initialValues = {
 	brand: '',
@@ -34,12 +35,15 @@ const FiltersForm = ({ openIndex, vehiclesFields }) => {
 
 						{item?.type === 'checkbox' && (
 							<Checkbox
+								name={item?.name}
 								labelClassName='items-center'
 								wrapperClassName='col-span-2 inline-flex items-center gap-sm-plus font-bold text-md'
 							>
 								<CheckboxContent item={item} />
 							</Checkbox>
 						)}
+
+						{item?.type === 'radio' && <Radio item={item} />}
 					</div>
 				))}
 			</Form>

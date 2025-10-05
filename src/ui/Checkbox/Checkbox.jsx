@@ -8,6 +8,7 @@ import clsx from 'clsx'
 
 const Checkbox = ({
 	children,
+	name,
 	wrapperClassName,
 	labelClassName,
 	isCheckedClassName = '',
@@ -21,14 +22,15 @@ const Checkbox = ({
 					'grid grid-cols-[auto_auto] gap-x-sm-plus cursor-pointer',
 					labelClassName
 				)}
-				htmlFor='checkbox'
+				htmlFor={name}
 			>
 				<Field
 					className='visually-hidden'
 					value={isChecked}
+					name={name}
 					type='checkbox'
 					onClick={() => setIsChecked(prev => !prev)}
-					id='checkbox'
+					id={name}
 				/>
 				<div
 					className={clsx(
