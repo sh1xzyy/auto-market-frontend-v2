@@ -1,3 +1,4 @@
+import MainFilters from '@/components/MainFilters/MainFilters'
 import MainImage from '@/components/MainImage/MainImage'
 
 export default function Home() {
@@ -9,6 +10,10 @@ export default function Home() {
 			</h1>
 
 			<MainImage />
+
+			<section className='py-sm-plus mt-[405px]'>
+				<MainFilters />
+			</section>
 		</>
 	)
 }
