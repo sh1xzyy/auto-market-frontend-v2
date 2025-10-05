@@ -21,7 +21,7 @@ const filterButton = {
 	},
 }
 
-export const passengerCar = [
+const passengerCar = [
 	{
 		id: 'brand_passenger',
 		name: 'brand',
@@ -95,7 +95,7 @@ export const passengerCar = [
 	filterButton,
 ]
 
-export const motorBikes = [
+const motorBikes = [
 	{
 		id: 'category_motorBike',
 		name: 'category',
@@ -147,7 +147,7 @@ export const motorBikes = [
 	filterButton,
 ]
 
-export const eBikes = [
+const eBikes = [
 	{
 		id: 'category_eBike',
 		name: 'category',
@@ -203,7 +203,7 @@ export const eBikes = [
 	filterButton,
 ]
 
-export const miniTrucks = [
+const miniTrucks = [
 	{
 		id: 'miniTruckCategory',
 		category: 'field',
@@ -263,7 +263,7 @@ export const miniTrucks = [
 	filterButton,
 ]
 
-export const otherVehicles = [
+const otherVehicles = [
 	{
 		id: 'brand_other_vehicles',
 		name: 'brand',
@@ -330,7 +330,7 @@ export const otherVehicles = [
 	filterButton,
 ]
 
-export const other = [
+const other = [
 	{
 		id: 'other_lkw',
 		category: 'iconButton',
@@ -394,4 +394,13 @@ export const other = [
 		type: 'iconButton',
 		icon: <MdFrontLoader color='var(--color-light-orange)' size={45} />,
 	},
+]
+
+export const vehiclesFields = [
+	passengerCar,
+	motorBikes,
+	eBikes,
+	miniTrucks,
+	other,
+	otherVehicles,
 ]

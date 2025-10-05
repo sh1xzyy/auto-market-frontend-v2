@@ -3,6 +3,8 @@
 import { VehiclesList } from '@/modules/VehiclesList'
 import Container from '../Container/Container'
 import { useState } from 'react'
+import { vehiclesFields } from '@/data/vehiclesFields/formFields'
+import FiltersForm from '@/modules/FiltersForm/FiltersForm'
 
 const MainFilters = () => {
 	const [openIndex, setOpenIndex] = useState(0)
@@ -16,6 +18,10 @@ const MainFilters = () => {
 					setOpenIndex={setOpenIndex}
 					setIsOtherFiltersOpen={setIsOtherFiltersOpen}
 				/>
+
+				{(isOtherFiltersOpen || openIndex !== vehiclesFields.length - 2) && (
+					<FiltersForm vehiclesFields={vehiclesFields} openIndex={openIndex} />
+				)}
 			</div>
 		</Container>
 	)
