@@ -5,7 +5,7 @@ import { IoMdClose } from 'react-icons/io'
 const BurgerMenuCloseButton = ({ setIsBurgerMenuOpen }) => {
 	return (
 		<button
-			className='group flex items-center justify-between py-xl'
+			className='group flex items-center justify-between py-xl px-lg-plus'
 			type='button'
 			onClick={() => setIsBurgerMenuOpen(false)}
 		>

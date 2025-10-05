@@ -73,7 +73,7 @@
 
 	/* Shadows */
 	--shadow-header: 0px 0px 0px 1px var(--color-grey-deep);
-	--shadow-card: inset 1px 0px 5px 5px var(--color-dark-violet);
+	--shadow-card: inset 1px 0px 5px 5px var(--color-violet-deep);
 }
 
 @layer base {

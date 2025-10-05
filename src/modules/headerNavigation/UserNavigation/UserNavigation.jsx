@@ -48,7 +48,7 @@ const UserNavigation = ({ windowWidth }) => {
 
 					{openIndex === i && i === 1 && (
 						<DropDownMenu
-							className='w-[170px] py-md px-2lg right-0'
+							className='w-[170px] py-md px-lg-strong right-0'
 							iconClass='right-[10%]'
 						>
 							<DropDownUserInfo />
