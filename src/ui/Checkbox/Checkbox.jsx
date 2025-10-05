@@ -6,24 +6,23 @@ import { GrFormCheckmark } from 'react-icons/gr'
 import { useState } from 'react'
 import clsx from 'clsx'
 
-const Checkbox = ({ children }) => {
+const Checkbox = ({
+	children,
+	wrapperClassName,
+	labelClassName,
+	isCheckedClassName = '',
+}) => {
 	const [isChecked, setIsChecked] = useState(false)
 
 	return (
-		<div className='mb-lg-strong'>
+		<div className={wrapperClassName}>
 			<label
-				className='grid grid-cols-[auto_auto] items-start gap-x-sm-plus cursor-pointer'
+				className={clsx(
+					'grid grid-cols-[auto_auto] gap-x-sm-plus cursor-pointer',
+					labelClassName
+				)}
 				htmlFor='checkbox'
 			>
-				<div
-					className={clsx(
-						'flex justify-center items-center w-[20px] h-[20px] border border-grey-light rounded-xs transition-colors linear duration-300',
-						isChecked && 'bg-violet border-0'
-					)}
-				>
-					{isChecked && <GrFormCheckmark size={20} />}
-				</div>
-				{children}
 				<Field
 					className='visually-hidden'
 					value={isChecked}
@@ -31,6 +30,15 @@ const Checkbox = ({ children }) => {
 					onClick={() => setIsChecked(prev => !prev)}
 					id='checkbox'
 				/>
+				<div
+					className={clsx(
+						'flex justify-center items-center w-[20px] h-[20px] border border-grey-muted rounded-xs transition-colors linear duration-300',
+						isChecked && isCheckedClassName
+					)}
+				>
+					{isChecked && <GrFormCheckmark size={20} />}
+				</div>
+				{children}
 			</label>
 		</div>
 	)

@@ -2,6 +2,8 @@ import { Form, Formik } from 'formik'
 import clsx from 'clsx'
 import { classByType } from './data/classByType'
 import Selector from '@/ui/Selector/Selector'
+import Checkbox from '@/ui/Checkbox/Checkbox'
+import CheckboxContent from './ui/CheckboxContent'
 
 const initialValues = {
 	brand: '',
@@ -28,6 +30,15 @@ const FiltersForm = ({ openIndex, vehiclesFields }) => {
 					>
 						{item?.type === 'selector' && (
 							<Selector item={item} placeholder='Beliebig' name={item?.name} />
+						)}
+
+						{item?.type === 'checkbox' && (
+							<Checkbox
+								labelClassName='items-center'
+								wrapperClassName='col-span-2 inline-flex items-center gap-sm-plus font-bold text-md'
+							>
+								<CheckboxContent item={item} />
+							</Checkbox>
 						)}
 					</div>
 				))}
